@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 class LoginPage extends React.Component {
@@ -11,7 +12,8 @@ class LoginPage extends React.Component {
                 <div className="d-flex justify-content-center align-center">
                 <button type="button" className="btn btn-primary p-1 m-3 w-25 rounded">Sign In</button>
                 </div>
-                <div className="d-flex justify-content-center text-secondary p-1 m-1 ">Don't have an account? Create one</div>
+                <div className="d-flex justify-content-center text-secondary p-1 m-1 "><Link to="/forgotpassword">Forgot password?</Link></div>
+                <div className="d-flex justify-content-center text-secondary p-1 m-1 ">Don't have an account?<Link to="/signup">Create one</Link> </div>
             </div>
              </div>;
     }

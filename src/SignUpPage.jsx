@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 class SignUpPage extends React.Component {
@@ -12,7 +13,7 @@ class SignUpPage extends React.Component {
                 <div className="d-flex justify-content-center align-center">
                 <button type="button" className="btn btn-primary p-1 m-3 w-25 rounded">Sign Up</button>
                 </div>
-                <div className="d-flex justify-content-center text-secondary p-1 m-1 ">Already have an account? Login</div>
+                <div className="d-flex justify-content-center text-secondary p-1 m-1 ">Already have an account?<Link to="/signin">Login</Link> </div>
             </div>
              </div>;
     }

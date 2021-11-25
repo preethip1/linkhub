@@ -2,6 +2,7 @@ import NavBar from './Navbar';
 import LoginPage from './LoginPage';
 import SignUpPage from './SignUpPage';
 import { BrowserRouter as Router , Route , Switch} from 'react-router-dom'
+import ForgotPassword from './ForgotPassword';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
         </Route>
         <Route exact path="/signup">
           <SignUpPage/>
+        </Route>
+        <Route exact path="/forgotpassword">
+          <ForgotPassword/>
         </Route>
       </Switch>
     </div>
