@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-class LoginPage extends React.Component {
+class LoginPage extends React.Component {  
     render() { 
         return <div className="d-flex justify-content-center mt-5">
             <div className="w-25 h-75 border rounded d-flex flex-column m-2">
