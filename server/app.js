@@ -1,8 +1,17 @@
 const express = require('express');
+const cors=require("cors");
+
 var bodyParser = require('body-parser')
 
 const app = express();
 
+const corsOptions ={
+   origin:'*', 
+   credentials:true,            
+   optionSuccessStatus:200,
+}
+
+app.use(cors(corsOptions)) 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
@@ -15,7 +24,7 @@ app.get("/", (req, res)=>{
 });
 
 app.post('/login', (req, res)=>{
-
+    console.log(req.body)
     let email = req.body.email;
     if(!email){
         res.status(500).json({
