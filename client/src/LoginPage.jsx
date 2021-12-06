@@ -46,7 +46,7 @@ class LoginPage extends React.Component {
                 <input placeholder="Username" onChange={this.handleEmailChange.bind(this)} value={this.state.email} className="p-1 m-3 rounded bg-light border border-light"/>
                 <input type="password" onChange={this.handlePasswordChange.bind(this)} value={this.state.password} placeholder="Password" className="p-1 m-3 rounded bg-light border border-light"/>
                 <div className="d-flex justify-content-center align-center">
-                <button onClick={async ()=> await this.signIn()} type="button" className="btn btn-primary p-1 m-3 w-25 rounded">Sign In</button>
+                <button onClick={async ()=> await this.signIn()} type="button" className="btn btn-primary p-1 m-3 w-25 rounded"><Link to="/dashboard"> Sign In </Link></button>
                 </div>
                 <div className="d-flex justify-content-center text-secondary p-1 m-1 "><Link to="/forgotpassword">Forgot password?</Link></div>
                 <div className="d-flex justify-content-center text-secondary p-1 m-1 ">Don't have an account?<Link to="/signup">Create one</Link> </div>
